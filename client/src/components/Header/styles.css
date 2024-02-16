@@ -1,0 +1,11 @@
+img.logo {
+    width: 20%;
+    height: auto;
+    align-content: left;
+}
+
+img.banner {
+    width: 30%;
+    height: auto;
+    align-items: right;
+}
