@@ -4,13 +4,12 @@ import './styles.css'
 function TestDetail1() {
     return (
         <div>
-            <h1>IELTS Listening Sample 5. Section 1</h1>
-            <p>This is the first section of IELTS Listening test #5. The Listening module consists of 4 sections and takes 40 minutes. Listen to the audio and answer the questions. As you finish, press 'check' and proceed to the next section.</p>
+            <h1>Apartment for rent</h1>
+            <p>This is IELTS Listening test #1. The Listening module consists of 10 questions and takes 10 minutes. Listen to the audio and answer the questions. As you finish, press 'check' and proceed to the next section.</p>
             <audio controls autoPlay>
                 <source src="/audio/test1.mp3" type="audio/mpeg" ></source>
             </audio>
             <p>Questions 1-5</p>
-            <p>This is the first section of IELTS Listening test #5. The Listening module consists of 4 sections and takes 40 minutes. Listen to the audio and answer the questions. As you finish, press 'check' and proceed to the next section.</p>
             <table>
                 <tbody>
                     <tr>

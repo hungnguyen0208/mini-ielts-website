@@ -1,11 +1,22 @@
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
-import TestFeature from './features/IeltsTest';
+import TestList from './features/IeltsTest';
+import Homepage from './features/Homepage'
+import Error from './components/ErrorPage/Error';
+import SharedLayout from './components/SharedLayout';
+
 
 function App() {
   return (
-    <div className="App">
-      <TestFeature/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Homepage />} />
+          <Route path="test" element={<TestList />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

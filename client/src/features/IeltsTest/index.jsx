@@ -1,12 +1,15 @@
 import React from 'react'
-import Test1 from './pages/Test1'
+import { Link } from 'react-router-dom'
 
-function TestFeature() {
+function TestList() {
   return (
-    <div>
-        <Test1/>
-    </div>
+    <>
+      <h1>IELTS Listening Test</h1>
+      <Link to="/" >Back Home</Link> | {" "}
+      <Link to="/test/1" >Test 1</Link> | {" "}
+      <Link to="/test/2" >Test 2</Link>
+    </>
   )
 }
 
-export default TestFeature
+export default TestList
