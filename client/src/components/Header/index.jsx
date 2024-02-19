@@ -1,16 +1,14 @@
 import React from 'react'
 import './styles.css'
+import logo from '../../assets/images/Logo.jpg'
+import banner from '../../assets/images/Banner.jpg'
 
 function Header() {
   return (
     <div className='Header'>
       <section className='top-bar'>
-        <img className='logo' src="/images/Logo.jpg" alt="" />
-        <img className='banner' src="/images/Banner.jpg" alt="" />
-      </section>
-      <section className='top-nav'>
-        <button className='homepage'>Mini IELTS</button>
-        <button className='login'>Login</button>
+        <img className='logo' src={logo} alt="" />
+        <img className='banner' src={banner} alt="" />
       </section>
     </div>
   )

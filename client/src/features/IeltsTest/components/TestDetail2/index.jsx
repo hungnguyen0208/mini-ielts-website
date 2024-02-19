@@ -1,4 +1,5 @@
 import React from 'react'
+import test2Audio from '../../../../assets/audio/test2.mp3';
 
 function TestDetail2() {
     return (
@@ -6,7 +7,7 @@ function TestDetail2() {
             <h1>IELTS Listening Test 2</h1>
             <p>The Listening module consists of 10 questions and takes 10 minutes. Listen to the audio and answer the questions. As you finish, press 'check' and proceed to the next section.</p>
             <audio controls>
-                <source src="/audio/test2.mp3" type="audio/mpeg" ></source>
+                <source src={test2Audio} type="audio/mpeg" ></source>
             </audio>
             <p>Questions 1-4</p>
             <p>Complete the notes below.</p>
