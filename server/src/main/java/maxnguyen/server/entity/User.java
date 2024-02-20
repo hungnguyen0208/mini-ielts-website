@@ -28,6 +28,6 @@ public class User {
     )
     private Set<User> users = new HashSet<>();
 
-    @OneToMany(mappedBy = "test", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<UserResult> userResults = new ArrayList<>();
 }

@@ -23,5 +23,5 @@ public class UserResult {
     private Long questionId;
     private String userAnswer;
     private String correctAnswer;
-    private boolean answerCheck;
+    private Boolean answerCheck;
 }
