@@ -1,6 +1,8 @@
 package maxnguyen.server.controller;
 
+import maxnguyen.server.dto.LoginRequest;
 import maxnguyen.server.dto.UserRequest;
+import maxnguyen.server.exception.InvalidCredentialsException;
 import maxnguyen.server.exception.UserAlreadyExistException;
 import maxnguyen.server.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,4 +33,16 @@ public class UserController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest) {
+        try {
+            String token = userService.loginUser(loginRequest);
+            return new ResponseEntity<>(token, HttpStatus.OK);
+        } catch (InvalidCredentialsException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.UNAUTHORIZED);
+        }
+    }
+
+
 }
